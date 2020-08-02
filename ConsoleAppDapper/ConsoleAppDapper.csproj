@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="databaseBackup\dapper_demo.bak" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -59,5 +60,6 @@
       <Name>FstDapper</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
