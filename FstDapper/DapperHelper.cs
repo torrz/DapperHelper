@@ -426,7 +426,7 @@ namespace FstDapper
         /// </summary>
         /// <param name="sql">执行文本</param>
         /// <param name="param">参数化查询条件对象</param>
-        /// <param name="tablenames">指定返回表顺序，函数根据指定表名匹配表数据，不是为返回表起别名，如果不指定，返回的表名将命名为Table1、Table2...</param>
+        /// <param name="tablenames">按顺序为返回表起别名，如果不指定，返回的表名将命名为Table1、Table2...</param>
         /// <param name="commandTimeout">执行超时时间，单位：秒。仅当前命令生效</param>
         /// <param name="commandType">执行类型，对应sql使用</param>
         /// <returns></returns>
@@ -453,7 +453,7 @@ namespace FstDapper
         /// </summary>
         /// <param name="procName">存储过程名称</param>
         /// <param name="param">参数化查询条件对象</param>
-        /// <param name="tablenames">指定返回表顺序，函数根据指定表名匹配表数据，不是为返回表起别名，如果不指定，返回的表名将命名为Table1、Table2...</param>
+        /// <param name="tablenames">按顺序为返回表起别名，如果不指定，返回的表名将命名为Table1、Table2...</param>
         /// <param name="commandTimeout">执行超时时间，单位：秒。仅当前命令生效</param>
         /// <returns></returns>
         public DataSet QueryDataSetProc(string procName, object param = null, IEnumerable<string> tablenames = null, int? commandTimeout = null)
